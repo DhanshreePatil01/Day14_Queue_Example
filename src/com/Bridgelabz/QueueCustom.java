@@ -12,6 +12,18 @@ public class QueueCustom {
 		queueMadeWithLL.append(element);
 	}
 	
+	public boolean isEmpty() {
+		if(queueMadeWithLL.head!=null) {
+			return false;
+		}else {
+			return true;
+		}
+	}
+	
+	public INode deQueue() {
+		return queueMadeWithLL.pop();
+	}
+
 	public void printStack() {
 		queueMadeWithLL.dispalyLinkedList();
 	}

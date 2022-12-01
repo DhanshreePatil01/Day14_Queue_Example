@@ -17,6 +17,14 @@ public class QueueMain {
 	sampleQueue.printStack();
 	
 	System.out.println("-----------------------------------------------------------------------------------");
+	System.out.println("\nQueue before deletion:");
+	sampleQueue.printStack();
 	
+	INode deletedNode=sampleQueue.deQueue();
+	System.out.println("\nThe node is deleted: "+deletedNode.getKey());
+		
+	System.out.println("\nQueue after deletion using deQueue method:");
+	sampleQueue.printStack();
+	System.out.println("-----------------------------------------------------------------------------------");
  }
 }
